@@ -1,6 +1,10 @@
 $(document).ready(function (){
 });
 
+function displayError() {
+  $("#errors").html("I'm sorry, there's been an error. Please try again.")
+}
+
 function searchRepositories(){
   const searchTerms = $("#searchTerms").val()
   $.get(` https://api.github.com/search/repositories?q=${searchTerms}`, function(data){
@@ -43,9 +47,4 @@ function showCommits(el) {
     }).fail(function() {
       displayError()
   })
-}
-
-
-function displayError() {
-  $("#errors").html("I'm sorry, there's been an error. Please try again.")
 }
