@@ -25,6 +25,7 @@ function displayRepositories(data) {
 }
 
 function showCommits(el) {
+  console.log(el)
   const owner = el.dataset.owner
 }
 
