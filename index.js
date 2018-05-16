@@ -24,8 +24,8 @@ function displayRepositories(data) {
   return repoList
 }
 
-function showCommits() {
-  display commits in details div
+function showCommits(el) {
+  const owner = el.dataset.owner
 }
 
 
