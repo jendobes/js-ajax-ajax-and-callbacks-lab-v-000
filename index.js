@@ -48,9 +48,7 @@ function showCommits(el) {
       displayError()
   })
 }
-// $(document).ready(function (){
-// });
-//
+
 // function searchRepositories() {
 //   const input = $("#searchTerms")[0].value;
 //   const url = "https://api.github.com/search/repositories?q=" + input;
@@ -101,6 +99,6 @@ function showCommits(el) {
 //   });
 // }
 //
-// function displayError() {
-//   $("#errors").html("I'm sorry, there's been an error. Please try again.")
-// }
+function displayError() {
+  $("#errors").html("I'm sorry, there's been an error. Please try again.")
+}
