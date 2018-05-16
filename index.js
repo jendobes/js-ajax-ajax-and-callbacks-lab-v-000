@@ -11,7 +11,7 @@ function searchRepositories(){
 }
 
 function displayRepositories() {
-
+  console.log(data.repos)
 }
 
 function showCommits() {
