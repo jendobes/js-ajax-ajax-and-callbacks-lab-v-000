@@ -14,7 +14,7 @@ function displayRepositories(data) {
   const repos = data.repos
   const repoList = "<ul>" + repos.map(r => {
     <li>
-    
+    "This is so fun"
     </li>
   }).join('') + "</ul>"
   return repoList
