@@ -12,11 +12,11 @@ function searchRepositories(){
 
 function displayRepositories(data) {
   const repos = data.repos
-  const repoList = "<ul>" + repos.map(r => {
+  const repoList = "<ul>" + repos.map(r => {`
     <li>
     "This is so fun"
     </li>
-  }).join('') + "</ul>"
+  `}).join('') + "</ul>"
   return repoList
 }
 
