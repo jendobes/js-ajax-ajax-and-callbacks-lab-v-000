@@ -10,7 +10,7 @@ function searchRepositories(){
   })
 }
 
-function displayRepositories() {
+function displayRepositories(data) {
   console.log(data.repos)
 }
 
