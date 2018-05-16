@@ -11,7 +11,7 @@ function searchRepositories(){
 }
 
 function displayRepositories(data) {
-  const repos = data.repos
+  const repos = data.items
   const repoList = "<ul>" + repos.map(r => {`
     <li>
     "This is so fun"
