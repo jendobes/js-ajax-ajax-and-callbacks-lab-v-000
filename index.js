@@ -4,14 +4,14 @@ $(document).ready(function (){
 function searchRepositories(){
   const searchTerms = $("#searchTerms").val()
   $.get(` https://api.github.com/search/repositories?q=${searchTerms}`, function(data){
-    $('#results').html(displayRepositories("I am a string"))
+    $('#results').html(displayRepositories(data))
   }).fail(function(error) {
     displayError()
   })
 }
 
 function displayRepositories(data) {
-  return `<strong>${data}</strong>`
+  const repos = data.repos
 }
 
 function showCommits() {
